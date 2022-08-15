@@ -1,0 +1,20 @@
+﻿<Window
+    x:Class="Serial_tool.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Serial_tool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Rectangle Fill="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btu" Style="{StaticResource AccentButtonStyle}" Content="开始" FontSize="40" Margin="0,0,20,0" Click="Button_Click"></Button>
+            <TextBlock Text="温度:" FontSize="35" Margin="0,0,10,0"/>
+            <TextBlock x:Name="temp" Text="0℃" FontSize="35" Margin="0,0,30,0"/>
+            <TextBlock Text="湿度:" FontSize="35" Margin="0,0,10,0"/>
+            <TextBlock x:Name="hum" Text="0%" FontSize="35"  Margin="0,0,30,0"/>
+        </StackPanel>
+    </StackPanel>
+    
+</Window>
